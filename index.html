@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SoumyashreeKar.portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Dr. Soumyashree Kar</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+                <h2 class="myH2">About</h2>
+                <img src="https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=pYbBMHMAAAAJ&citpid=1" width="200" height="200" style="float:right; padding-right:200px; padding-left:50px; padding-bottom: 20px;" alt="add-pfp">
+                    <p class="myP">
+                    Dr. Soumyashree Kar is an Assistant Professor at IIT Bombay, a role she has held since January 2025. 
+                    Prior to this, she worked as a research scientist at the University of North Carolina at Chapel Hill, and served as a data scientist at the University of Southern Mississippi from January 2022 to February 2024. 
+                    </p>
+                    <p class="myP">
+                    Dr. Kar completed her postdoctoral research at Iowa State University, following her time as a Research Scholar and Teaching Assistant at IIT Bombay between January 2016 and April 2021. 
+                    During this period, she also participated in a student exchange program at the University of Tokyo. 
+                    </p>
+                    <p class="myP">
+                    Earlier in her career, Dr. Kar held a Senior Research Fellowship at the Indian Agricultural Research Institute (August to November 2015), and completed a research internship at the Odisha Space Applications Centre. 
+                    She has also worked as a software engineer at HSBC
+                </p>
+        </div>
+
+    <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="func.js"></script>
+</body>
+</html>
